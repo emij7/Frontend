@@ -7,7 +7,7 @@ const buildCount = (i)=>{
     }
     return displayCount;
 };
-const myCount = buildCount();
+const myCount = buildCount(0);
 myCount()
 myCount()
 myCount()
