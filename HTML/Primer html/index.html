@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--Le decimos al navegador que este archivo es del tipo html:5-->
+
+<html lang="es">
+  <!--Es la etiqueta "padre" donde vivirá nuestro proyecto. El atributo lang establece el idioma del sitio web. Debemos usarlo para que el navegador pueda traducir nuestra página-->
+
+  <head>
+
+    <meta charset="UTF-8" />
+    <!--Esta etiqueta nos ayuda a la hora de incluir caracteres especiales, acentos, enie y emojis en nuestro proyecto-->
+
+    <meta name="description" 
+          content="Esta página te mostrará fotos de gatos" />
+    <!--Damos una descripción general de la página que será mostrada en buscadores, tiene un límite de 155 caracteres-->
+
+    <meta name="robots" content="index,follow" />
+    <!--Le dice a los robots de los navegadores que rastreen nuestra página y la muestran en las búsquedas-->
+    <!--Nuestro "index", tiene autorización "follow". Si no queremos ponemos "unfollow"(raaaaaro)-->
+
+    <title>Aprendiendo HTML</title>
+    <!--Título de nuestra página, no confundir con los H1-H6. Este titulo es el que ves en la pestaña del navegador-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Es para proyectos responsive, esto quiere decir que es un proyecto que busca correcta visualizacion en distintos dispositivos-->
+    <!--Viewport es el tamaño de la pantalla. Siempre debe existir-->
+
+    <link rel="stylesheet" href="/style.css">
+    <!--Etiqueta para poder agregar CSS. "rel" contiene que es una hoja de estilos y "href" contiene la ruta del doc css -->
+    <!--Linkea/Enlaza archivos de estilos u otros archivos que necesitemos en nuestro proyecto-->
+    <!--En href pongo ./ y VSC nos ayuda a encontrar carpeta y archivo CSS. Esta etiqueta no puede faltar -->
+
+  </head>
+
+
+  <body>
+
+    <header> <!--Sección superior de nuestro website--> 
+
+      <nav></nav> <!--Sección de navegación de nuestro website, siempre dentro del header-->
+
+    </header>
+
+    <main> <!--Main es el contenido central de nuestro website, "la parte del medio"-->
+
+      <section> 
+        <!--Nuestro website puede estar divido por secciones, por ejemplo platzi tiene 3: El navegador de cursos y rutas, el feed y nuestras rutas de aprendizaje-->
+
+        <article>
+          <!--Contenido independiente de la página. Es reutilizable-->
+        </article>
+
+      </section>
+
+      <ul> <!--Lista desordenada: Sin numerar-->
+
+        <li>Boca Juniors<!--Item List. Elementos de la lista--></li>
+
+      </ul>
+
+      <ol></ol> <!--Lista ordenada: Numerada-->
+      
+    </main>
+
+    <footer> <!--Sección final de nuestro website-->
+
+    </footer>
+
+    <p>Soy un texto</p> <!--Párrafo, texto-->
+
+    <h1>Soy un titulo.</h1> 
+    <h2>Soy un subtitulo.</h2>
+    <h3>Tercer título.</h3>
+    <!--Títulos, muestran el texto más grande y con negrilla. Existen desde el h1 al h6-->
+
+    <a href="https://twitter.com/emijuarez_" target="_blank">Soy un link a twitter</a>
+    <!--Enlaces/links que nos permitirán movernos entre páginas. Cuando pongo numeral se mueve dentro de la página con el ID q le proporcione-->
+
+  </body>
