@@ -1,0 +1,18 @@
+.familiaProductos{
+    color: darkred ;
+    font-size: large;
+    font-family: cursive;
+}
+.productos{
+    color: rgb(26, 230, 36);
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-stretch: expanded;
+}
+main{
+    background-color: slateblue;
+}
+img{
+    border-radius: 60%;
+}

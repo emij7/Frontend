@@ -5,33 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compras supermercado</title>
+    <link rel="stylesheet" href="./super.css">
 </head>
 <body>
-    <p>Desafío</p>
-    <h1>Lista supermercado</h1>
-    <ul>
-        <li>Frutas
-            <ol>
-                <li>Frutillas</li>
-                <li>Banana</li>
-                <li>Kiwi</li>
-                <li>Cerezas</li>
-            </ol>
-        </li>
-        <li>Verduras
-            <ol>
-                <a href=#><li>Lechuga</li></a> <!--Esta debería ser la forma, es más facil identificar que hace-->
-                <li><a href="https://cuk-it.com/recetas/papas-a-la-crema/" target="_blank">Papas</a></li>
-            </ol>
-        </li>
-        <li>Carne
-            <ol>
-                <li>Pollo</li>
-                <li>Molida</li>
-                <li>Matambre</li>
-            </ol>
-        </li>
-    </ul>
-    <p>Fin de la lista</p>
+    <main>
+        <p>Desafío</p>
+        <h1>Lista supermercado</h1>
+        <ul class="familiaProductos">
+            <li>Frutas
+                <figure>
+                    <img src="./frutas.png" alt="Frutas en bol.">
+                </figure>
+
+                <ol class="productos">
+                    <li>Frutillas</li>
+                    <li>Banana</li>
+                    <li>Kiwi</li>
+                    <li>Cerezas</li>
+                </ol>
+            </li>
+            <li>Verduras
+                <figure>
+                    <img src="./verduras.png" alt="Verduras en un cajon">
+                </figure>
+                <ol class="productos">
+                    <a href=#><li>Lechuga</li></a> <!--Esta debería ser la forma, es más facil identificar que hace-->
+                    <li><a href="https://cuk-it.com/recetas/papas-a-la-crema/" target="_blank">Papas</a></li>
+                </ol>
+            </li>
+            <li>Carne
+                <figure>
+                    <img src="./carne.png" alt="Dibujo de un filete de carne.">
+                </figure>
+                <ol class="productos">
+                    <li>Pollo</li>
+                    <li>Molida</li>
+                    <li>Matambre</li>
+                </ol>
+            </li>
+        </ul>
+        <p>Fin de la lista</p>
+    </main>
 </body>
 </html>

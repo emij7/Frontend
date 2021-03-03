@@ -1,0 +1,16 @@
+h1{
+    color: gold;
+    font-size: 70px;
+}
+
+/* CLASS */
+.rojoPequenio{
+    color: red;
+    font-size: smaller;
+}
+
+/* ID */
+#azulLoco {
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
