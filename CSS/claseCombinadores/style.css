@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* adjacent sibling */
+.div--adj h2 + p{ 
+    color: red;
+} 
+
+/* General sibling */
+.div--gral h2 ~ p{
+    color: red;
+}
+
+/* Child */
+.div--child article > p{
+    color: red;
+}
+/* Descendant */
+div h1{
+    color: darkblue;
+}
