@@ -1,5 +1,11 @@
+/* Quita margenes y crea bordes tamaño caja */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+html {
+    font-size: 62.5%; 
+}
+/* Truco para trabajar con rem = 10px */

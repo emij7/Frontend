@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; 
+}
+.container{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    background-color: rgb(158, 19, 47);
+    width: 66vw;
+    height: 140vh;
+    border-radius: 5%;
+    border-color: yellow;    
+    border-style: solid;
+    border-width: 1rem;
+
+}
+img{
+    max-width: 70%;
+    border-color: yellow;    
+    border-style: solid;
+    border-width: 1.5rem;
+    border-radius: 10%;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.div--caja{
+    background-color: rgb(0, 0, 0);
+    border-color: yellow;
+    border-style: inherit;
+    border-radius: inherit;
+    width: 40vw;
+    height: 8vw;
+    margin: 0 auto;
+    position: relative;
+    bottom: 2rem;
+
+}
+.div--caja__titulo{
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.div--container__caract{
+    max-width: 70%;
+    min-height: 50vh;
+    border-color: yellow;    
+    border-style: solid;
+    border-width: 1rem;
+    border-radius: 10%;
+    background-color: rgb(209, 133, 18);
+    margin-top: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div--container__caract li{
+    list-style-type: none;
+    margin-left: 1rem;
+    line-height: 10rem;
+    margin-top: auto;
+
+}
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+}
