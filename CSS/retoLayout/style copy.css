@@ -6,16 +6,15 @@
 .header{
     background-color: blue;
     height: 22vh;
-}
-figure, .header--navigation,aside,section,p{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
 }
 
 .header--navigation{
-    position: absolute;
-    right: 0;
-    top: 4rem;
     font-weight: bolder;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 .header--navigation li{
     margin: 0 2rem;
@@ -27,14 +26,18 @@ li::after{
 img{
     height: 10rem;
 }
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .header--navigation li{
     font-size: 1rem;
     list-style: none;
-    display: inline-block
 }
 main{
     width: 100%;
-    height: fit-content;
+    display: flex;
 }
 aside{
     margin: 0;
@@ -55,14 +58,13 @@ aside div p{
 main{
     background-color: aquamarine;
 }
-section{
-    position: absolute;
-}
+
 .footer--network{
     position: absolute;
     right: 0;
 }
 footer{
+    display: flex;
     background-color: blue;
 }
 footer p{
