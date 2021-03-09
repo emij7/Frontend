@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    background-color: blue;
+    height: 22vh;
+}
+figure, .header--navigation,aside,section,p{
+    display: inline-block;
+}
+
+.header--navigation{
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    font-weight: bolder;
+}
+.header--navigation li{
+    margin: 0 2rem;
+    color: darkseagreen;
+}
+img{
+    height: 10rem;
+}
+.header--navigation li{
+    font-size: 1rem;
+    list-style: none;
+    display: inline-block
+}
+main{
+    width: 100%;
+    height: fit-content;
+}
+aside{
+    margin: 0;
+}
+aside div{
+    border-color: blue;
+    border-style: solid;
+    border-width: 0,2rem;
+    background-color: yellow;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+}
+aside div p{
+    position: relative;
+    top: 50%;
+}
+main{
+    background-color: aquamarine;
+}
+section{
+    position: absolute;
+}
+.footer--network{
+    position: absolute;
+    right: 0;
+}
+footer{
+    background-color: blue;
+}
+footer p{
+    color: white;
+    margin: 0 1rem;
+}
