@@ -68,18 +68,18 @@ header p{
 .header--button{
    position: absolute;
    left: calc(50% - 11.45rem);
+   top: calc(100% - 2.4rem);
    text-decoration: none;
    color: var(--warm-black);
    line-height: 1.823rem;
    font-size: 1.4rem;
    font-weight: 700;
    display: block;
-   margin-top: 3rem;
    padding: 1.5rem 1.6rem;
    width: 22.9rem;
    height: 4.8rem;
    background-color: var(--off-white);
-   box-shadow: 0rem 4rem 8rem rgba(89, 73, 30, 0.36);
+   box-shadow: 0rem 4rem 11rem rgba(89, 73, 30, 0.36);
    border-radius: 0.4rem;
 }
 .header--button span{
@@ -88,4 +88,91 @@ header p{
     height: 0.741rem;
     margin-left: 1rem;
     background-image: url("./assets/icons/down-arrow.svg");
+}
+main{
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    background-color: var(--just-white);
+}
+.backgroundImg{
+    height: 19.5rem;
+    width: 19.5rem;
+    background-image: url("./assets/img/Bitcoin.svg");
+    margin-top: 5.9rem;
+    margin-bottom: 4rem;
+
+}
+.main--exchange-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main--exchange-container--title{
+    left: calc(50% - 1.6rem);
+    min-width: 2.88rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+.main--exchange-container--title h2{
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--warm-black);
+}
+.main--exchange-container--title p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin-top: 2.4rem;
+    color: #757575;
+    margin-bottom: 4.8rem;
+}
+
+.main--commission-title{
+    color: var(--secondary-blue);
+    font-size: 1.8rem;
+    line-height: 2.344rem;
+    font-weight: bold;
+}
+.table--1-left, .table--2-left, .table--3-left, .table--4-left{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.936rem;
+    color: #B5B0AC;
+}
+.table--1-right, .table--2-right, .table--3-right, .table--4-right{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.694rem;
+    color:#757575;
+    ;
+}
+.table--1-right span{
+    width: 1.1rem;
+    height: 0.6rem;
+    display: inline-block;
+    margin-left: 1rem;
+    background-image: url("./assets/icons/trending-down.svg");
+}
+.table--2-right span{
+    width: 1.1rem;
+    height: 0.6rem;
+    display: inline-block;
+    background-image: url("./assets/icons/trending-up.svg");
+}
+.table--3-right span{
+    width: 1.1rem;
+    height: 0.6rem;
+    display: inline-block;
+    background-image: url("./assets/icons/trending-down.svg");
+}
+.table--4-right span{
+    width: 1.1rem;
+    height: 0.6rem;
+    display: inline-block;
+    background-image: url("./assets/icons/trending-down.svg");
 }
