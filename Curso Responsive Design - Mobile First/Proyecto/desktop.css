@@ -1,0 +1,14 @@
+.main--benefits{
+    height: 50rem;
+}
+.main--benfits-container{
+    width: 40%;
+}
+.main--benefits-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.plans--payment-options{
+    overflow-x: hidden;
+}
