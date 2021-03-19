@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; 
+    width: 100vp;
+    height: 100vh;
+    background-image: linear-gradient(to right, #000000, #0f0087);
+}
+.padre{
+    display: grid;
+    width: 100%;
+    height: 10rem;
+    background-color: aqua;
+}
+.hijo-padre{
+    display: grid;
+    width: 50%;
+    height: 50%;
+    background-color: violet;
+}
+.hijo{
+    width: 50%;
+    height: 50%;
+    background-color:greenyellow;
+}
