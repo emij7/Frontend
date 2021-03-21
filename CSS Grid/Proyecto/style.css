@@ -6,47 +6,238 @@
 
 html {
     font-size: 62.5%; 
+    background: linear-gradient(140deg, #201E1C 33%, #759cce 100%);;
+}
+body{
+    max-height: 72.2rem;
+    overflow: hidden;
 }
 .main--container{
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 40% 30% 30%;
+    grid-template-rows: 50% 20% 30%;
     grid-template-areas: 
     "bat hand boca"
     "bat . about"
     ". code about";
 }
+/* BAT */
 .bat{
-    background-color: black;
+    display: flex;
+    position: relative;
     width: 80%;
     height: 80%;
-    grid-row-start: bat;
-    grid-row-end: bat;
+    grid-area: bat;
+    align-self: end;
 }
-.hand{
-    background-color: green;
-    width: 80%;
-    height: 80%;
-    grid-area: hand;
-}
-.boca{
-    background-color: yellow;
+.bat img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
     width: 100%;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0rem 0rem 4rem 1rem #759cce;
+    z-index: 1;
+}
+.bat__fade{
+    background-color: #759cce;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+.bat--p {
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 1;
+    z-index: 3;
+    opacity: 0;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    height: 50%;
+    top: 25%;
+}
+.bat:hover .bat--p{
+    opacity: 1;
+}
+.bat:hover .bat__fade{
+    opacity: 0.6;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0rem 0rem 4rem 1rem #759cce;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Handball */
+
+.hand{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 3rem;
+}
+.hand img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0rem 0rem 4rem 1rem #7ac4a5;
+}
+.hand__fade{
+    background-color: #7ac4a5;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    border-radius: 0 0 1rem 1rem;
+}
+.hand--p {
+    position: absolute;
+    width: 100%;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 1;
+    z-index: 3;
+    opacity: 0;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    top: calc(50% - 2.5rem)
+}
+.hand:hover .hand--p{
+    opacity: 1;
+}
+.hand:hover .hand__fade{
+    opacity: 0.6;
+    box-shadow: 0rem 0rem 4rem 1rem #759cce;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Boca Juniors */
+
+.boca{
+    position: relative;
+    display: flex;
+    width: 30%;
     height: 100%;
     grid-area: boca;
+    justify-self: center;
+    margin-right: 3rem;
 }
-.about{
-    background-color: gray;
-    width: 100%;
+.boca img{
+    object-fit: cover;
     height: 100%;
-    grid-row-start: about;
-    grid-row-end: about;
-}
-.code{
-    background-color: red;
     width: 100%;
+    z-index: 1;
+    position: absolute;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0rem 0rem 4rem 1rem #bdc47a;
+}
+.boca__fade{
+    background-color: #bdc47a;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    border-radius: 0 0 1rem 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.boca--p {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: white;
+    text-shadow: 0rem 0rem 0.5rem blue;
+    z-index: 3;
+    opacity: 0;
+    letter-spacing: 0.3rem;
+    margin: auto;
+    align-self: center;
+}
+.boca:hover .boca--p{
+    opacity: 1;
+}
+.boca:hover .boca__fade{
+    opacity: 0.6;
+    box-shadow: 0rem 0rem 4rem 1rem #759cce;
+
+}
+/* Code img */
+
+.code{
+    display: flex;
+    position: relative;
+    width: 87%;
     height: 100%;
     grid-area: code;
+}
+.code img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0rem 0rem 4rem 1rem #c47a7a;
+}
+.code__fade{
+    background-color: #c47a7a;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+    border-radius: 0 0 1rem 1rem;
+}
+.code--p {
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 700;
+    z-index: 3;
+    opacity: 0;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: calc(50% - 2.5rem);
+}
+.code:hover .code--p{
+    opacity: 1;
+}
+.code:hover .code__fade{
+    opacity: 0.6;
+    box-shadow: 0rem 0rem 4rem 1rem #759cce;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Acerca de mi */
+
+.about{
+    position: relative;
+    display: flex;
+    width: 95%;
+    height: 80%;
+    grid-row-start: about;
+    grid-row-end: about;
+    align-self: end;
+    justify-self: end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+.about h1{
+    text-align: center;
+    align-self: center;
+    color: white;
 }
