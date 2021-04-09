@@ -59,13 +59,14 @@ body{
     letter-spacing: 0.3rem;
     width: 100%;
     height: 50%;
-    top: 25%;
+    top: 30%;
+    line-height: 4.9rem;
 }
 .bat:hover .bat--p{
     opacity: 1;
 }
 .bat:hover .bat__fade{
-    opacity: 0.6;
+    opacity: 0.75;
     border-radius: 0 1rem 1rem 0;
     box-shadow: 0rem 0rem 4rem 1rem #759cce;
     font-family: 'Poppins', sans-serif;
@@ -117,7 +118,7 @@ body{
     opacity: 1;
 }
 .hand:hover .hand__fade{
-    opacity: 0.6;
+    opacity: 0.75;
     box-shadow: 0rem 0rem 4rem 1rem #759cce;
     font-family: 'Poppins', sans-serif;
 }
@@ -168,7 +169,7 @@ body{
     opacity: 1;
 }
 .boca:hover .boca__fade{
-    opacity: 0.6;
+    opacity: 0.75;
     box-shadow: 0rem 0rem 4rem 1rem #759cce;
 
 }
@@ -210,13 +211,13 @@ body{
     width: 100%;
     height: 100%;
     text-align: center;
-    top: calc(50% - 2.5rem);
+    top: calc(50% - 2.8rem);
 }
 .code:hover .code--p{
     opacity: 1;
 }
 .code:hover .code__fade{
-    opacity: 0.6;
+    opacity: 0.75;
     box-shadow: 0rem 0rem 4rem 1rem #759cce;
     font-family: 'Poppins', sans-serif;
 }
@@ -240,4 +241,5 @@ body{
     text-align: center;
     align-self: center;
     color: white;
+    text-shadow:  0rem 0rem 2rem black;
 }
