@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%; 
+    font-size: 2rem;
+}
+#main-doc{
+    display: flex;
+}
+#navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    height: 100%;
+}
+
+.nav-link-container{
+    height: 30%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.nav-link-div{
+    height: 100%;
+    overflow-y: scroll;
+}
+#section-container{
+    margin-left: 30%;    
+}
+.main-section{
+    margin: 1rem;
+    padding: 1rem;
+}
+@media (max-widht:700px){
+    html{
+        font-size: 1rem;
+    }
+}

@@ -10,6 +10,10 @@
 figure, .header--navigation,aside,section,p{
     display: inline-block;
 }
+figure img{
+    position: relative;
+    bottom: 14px;
+}
 
 .header--navigation{
     position: absolute;
