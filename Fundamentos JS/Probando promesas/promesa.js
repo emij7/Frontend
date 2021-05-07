@@ -1,5 +1,5 @@
-var numero = 7;
-var promesa = (x) => {
+let numero = 7;
+let promesa = (x) => {
     return new Promise(function(res,rej){
         if(x==7){
             res()
