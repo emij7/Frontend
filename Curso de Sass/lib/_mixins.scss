@@ -1,0 +1,21 @@
+@mixin max-width{
+    max-width: 1024px;
+}
+@mixin tamanio-letra($tamanio,$color:red){
+    h1{
+        font-size:$tamanio + 15px;
+    }
+    h2{
+        font-size: $tamanio + 5px;
+    }
+    p{
+        font-size: $tamanio - 5px;
+        color: $color;
+    }
+}
+
+@mixin respond-to($width){
+    @media only screen and (min-width: $width){
+        @content 
+    }
+}

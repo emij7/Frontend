@@ -1,0 +1,28 @@
+
+//Branding Colors
+$color-brand: #EA83EE;
+$color-secondary: rgb(219,216,121);
+
+$color-black : rgb(0,0,0);
+$color-darkgrey : #4d4d4d;
+$color-grey : #737373;
+$color-lighgrey : #bfbfbf;
+$color-white : white;
+
+// Texturas
+$color-alert: rgb(252,228,207);
+$color-error: rgb(218,79,73);
+$color-info: rgb(66,104,221);
+$color-success: rgb(91,183,91);
+
+
+// Tipografía
+$basefont: 'Quicksand', sans-serif;
+$basefontsize: 16px;
+
+$buttoncolor: $color-white;
+$buttonbackgroundcolor: $color-brand;
+$buttonFontSize: $basefontsize * 1.5;
+
+//Constantes
+$border-radius: 3px;
