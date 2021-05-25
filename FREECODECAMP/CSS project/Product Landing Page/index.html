@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -13,20 +15,35 @@
             <img src="./assets/fox.jpg" alt="Orange fox logo" id="header-img">
         </div>
         <nav id="nav-bar">
-            <a href="#-form" class="nav-link">Form</a>
-            <a href="#video" class="nav-link">Video</a>
-            <a href="#about" class="nav-link">About</a>
+            <a href="#video" class="nav-link">Relax music</a>
+            <a href="#about" class="nav-link">Lorem Ipsum</a>
+            <a href="#form" class="nav-link">¡Suscribe!</a>
         </nav>
     </header>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <label for="email">Email:!
-            <input type="email" name="email" id="email" placeholder="Enter your e-mail.">
-        </label>
-        <button type="submit" id="submit" class="submit-button">¡Suscribe!</button>
-    </form>
-    <div id="video-div">
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/0-7IHOXkiV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quam ex unde ad sapiente in corporis aut iste fugit quas odio doloribus mollitia quos quibusdam, a, expedita non eveniet. Cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat dolorum ex qui doloribus, eum incidunt ducimus est ullam commodi tempore inventore tempora nobis recusandae iste. Rem itaque ad consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam eligendi asperiores exercitationem vitae, vel possimus! Modi, corrupti ad aperiam velit provident, atque et quaerat, ullam reiciendis aliquam reprehenderit. Ut, modi?</p>
+    <main class="main">
+        <div class="main__presentation">
+            <h1>¿What is Lorem Ipsum?</h1>
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. <br>     The term Lorem Ipsum is derived from the Latin term Dolorem Ipsum which means "pain itself. " The text has been in use for a very long time and its history spans for over two millennia. 
+            </p>
+        </div>        
+        <div id="video-div">
+            <h5><span id="video"></span></h5>
+            <iframe class="main__video" src="https://www.youtube.com/embed/lE6RYpe9IT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <section class="main__text">
+            <h4><span id="about"></span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quam ex unde ad sapiente in corporis aut iste fugit quas odio doloribus mollitia quos quibusdam, a, expedita non eveniet. Cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat dolorum ex qui doloribus, eum incidunt ducimus est ullam commodi tempore inventore tempora nobis recusandae iste. Rem itaque ad consequatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam eligendi asperiores exercitationem vitae, vel possimus! Modi, corrupti ad aperiam velit provident, atque et quaerat, ullam reiciendis aliquam reprehenderit. Ut, modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci labore fugiat perferendis delectus, accusamus odio sequi est repudiandae minus placeat, iste inventore consequatur optio expedita nobis a, magni beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex vel fuga asperiores saepe, corporis error quibusdam, illum placeat eius nam voluptates aperiam veniam tempore at neque cupiditate quod dolor!</p>
+        </section>
+        <div class="main__subscription">
+            <h5><span id="forma"></span></h5>
+            <h3>Suscribe to our newsletter to receive more information.</h3>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <label for="email">E-mail:
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail.">
+                </label>
+                <button type="submit" id="submit" class="submit-button">¡Suscribe!</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
