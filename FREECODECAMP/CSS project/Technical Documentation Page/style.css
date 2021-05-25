@@ -1,3 +1,7 @@
+:root{
+    --primary-color: rgb(211, 211, 211);
+    --secondary-color: rgb(255, 255, 195);
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -11,22 +15,41 @@ html {
 #main-doc{
     display: flex;
 }
+#nav-header{
+    text-align: center;
+    border: 0.1rem solid black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    text-shadow: -1px -1px 2px black;
+}
 #navbar{
     position: fixed;
     display: flex;
     flex-direction: column;
-    max-width: 30%;
+    max-width: 25%;
     height: 100%;
 }
 
 .nav-link-container{
-    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27%;
     text-align: center;
-    margin-top: 2rem;
+    border-width: 0.05rem 0.05rem 0 0.05rem;
+    border-style: dashed;
+    border-color: black;
 }
 .nav-link-div{
     height: 100%;
     overflow-y: scroll;
+    background-color: var(--secondary-color);
+    
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
 }
 #section-container{
     margin-left: 30%;    
@@ -35,8 +58,29 @@ html {
     margin: 1rem;
     padding: 1rem;
 }
-@media (max-widht:700px){
-    html{
-        font-size: 1rem;
+header{
+    font-size: 1.5rem;
+    margin-bottom: 0.45rem;
+}
+@media (max-width:800px){
+    #main-doc{
+        display: block;
+    }
+    .main-section{
+        margin: 0;
+    }
+    #navbar{
+        position: relative;
+        max-width: 100%;
+        max-height: 5rem;
+        border-width: 0rem 0rem 0.1rem 0rem;
+        border-style: solid;
+        border-color: black
+    }
+    #section-container{
+        margin-left: 0;
+    }
+    .nav-link-div{
+        overflow-y: scroll;
     }
 }
