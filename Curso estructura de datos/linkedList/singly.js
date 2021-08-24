@@ -57,7 +57,9 @@ class MySinglyLinkedList {
         let toRemove = this.getIndex(index)
         let prevPointer = this.getIndex(index-1)
         prevPointer.next = toRemove.next
-        this.lenght--;
+        if(this.length>0){
+            this.length--;
+        }
    }
 //    append(value) {
 //        //Recibimos el valor y lo añadimos al final

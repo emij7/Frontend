@@ -66,7 +66,9 @@ class MyDoublyLinkedList {
         let nextPointer = this.getIndex(index+1)
         prevPointer.next = nextPointer
         nextPointer.prev = prevPointer
-        this.lenght--;
+        if(this.length>0){
+            this.length--;
+        }
    }
 }
 

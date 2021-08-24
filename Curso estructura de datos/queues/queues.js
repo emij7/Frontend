@@ -33,7 +33,9 @@ class Queue {
                 this.length--;
             }else{
                 this.bottom = this.bottom.next
-                this.length--;
+                if(this.length>0){
+                    this.length--;
+                }
             }
         return this    
     }
