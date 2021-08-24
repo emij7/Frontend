@@ -6,9 +6,11 @@
   border-radius: 3px;
   font-size: 24px;
 }
+
 .button__icon {
-  font-size: 0.6em;
+  font-size: .6em;
 }
+
 .button--info {
   background-color: #4268dd;
 }
@@ -25,16 +27,20 @@ body {
   max-width: 1024px;
   background-color: gray;
 }
+
 body h1 {
   font-size: 55px;
 }
+
 body h2 {
   font-size: 45px;
 }
+
 body p {
   font-size: 35px;
   color: blue;
 }
+
 @media only screen and (min-width: 700px) {
   body {
     background-color: #80ff80;
@@ -50,3 +56,4 @@ h2 {
   margin-left: 2rem;
   color: #660000;
 }
+/*# sourceMappingURL=styles.css.map */
