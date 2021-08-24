@@ -32,6 +32,15 @@ class MySinglyLinkedList {
        this.head = newValue
        this.lenght++
    }
+   getIndex(index){
+       let counter = 0
+       let currentNode = this.head
+       while(counter !== index){
+           currentNode = currentNode.next
+           counter++;
+       }
+       return currentNode
+   }
    insert(index,value){
        if(index>this.lenght){
            this.append(value)
@@ -41,6 +50,14 @@ class MySinglyLinkedList {
        const nextPointer = prevPointer.next
        prevPointer.next = newValue
        newValue.next = nextPointer
+       this.lenght++;
+       return this;
+   }
+   remove(index){ //delete
+        let toRemove = this.getIndex(index)
+        let prevPointer = this.getIndex(index-1)
+        prevPointer.next = toRemove.next
+        this.lenght--;
    }
 //    append(value) {
 //        //Recibimos el valor y lo añadimos al final
