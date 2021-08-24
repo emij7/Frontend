@@ -27,10 +27,15 @@ class Queue {
         return this
     }
     dequeue(){
-        this.bottom = this.bottom.next
-        this.length--;
-        return this
+            if(this.length === 1) {
+                this.top = null
+                this.bottom = this.bottom.next
+                this.length--;
+            }else{
+                this.bottom = this.bottom.next
+                this.length--;
+            }
+        return this    
     }
-
 }
 let myQueue = new Queue()
